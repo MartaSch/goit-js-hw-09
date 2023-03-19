@@ -40,7 +40,7 @@ function addLeadingZero(value) {
 startBtn.addEventListener("click", () => { 
 timerId = setInterval(() => {
         let currentDate = new Date().getTime();
-        const disnace = futureDate - currentDate;
+        const distance = futureDate - currentDate;
         if (distance > 0) {  
             const { days, hours, minutes, seconds } = convertMs(distance);
             daysData.textContent = addLeadingZero(days);
