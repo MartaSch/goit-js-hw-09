@@ -40,9 +40,9 @@ function addLeadingZero(value) {
 startBtn.addEventListener("click", () => { 
 timerId = setInterval(() => {
         let currentDate = new Date().getTime();
-        const distance = futureDate - currentDate;
-        if (distance > 0) {  
-            const { days, hours, minutes, seconds } = convertMs(distance);
+        const timerMs = futureDate - currentDate;
+        if (timerMs > 0) {  
+            const { days, hours, minutes, seconds } = convertMs(timerMs);
             daysData.textContent = addLeadingZero(days);
             hoursData.textContent = addLeadingZero(hours);
             minutesData.textContent = addLeadingZero(minutes);
